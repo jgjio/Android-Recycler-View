@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 public class MainActivity extends AppCompatActivity {
 
     private static final int NUM_ITEMS = 100;
-    //TODO Implement RecyclerViewTextAdapter
     private RecyclerViewTextAdapter mTextRecyclerViewAdapter;
     private RecyclerView mTextList;
 
@@ -23,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mTextList.setLayoutManager(layoutManager);
         mTextList.setHasFixedSize(true);
-        //todo connect layout manager to recyclerview adapter
         mTextRecyclerViewAdapter = new RecyclerViewTextAdapter(NUM_ITEMS);
         mTextList.setAdapter(mTextRecyclerViewAdapter);
 
