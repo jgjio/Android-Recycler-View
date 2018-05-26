@@ -42,7 +42,7 @@ public class RecyclerViewTextAdapter extends RecyclerView.Adapter<RecyclerViewTe
 
         public NumberViewHolder(View itemView) {
             super(itemView);
-            listItemView = (TextView) itemView.findViewById(R.id.text_view_item);
+            listItemView = itemView.findViewById(R.id.text_view_item);
         }
 
         void bind (int listIndex) {
