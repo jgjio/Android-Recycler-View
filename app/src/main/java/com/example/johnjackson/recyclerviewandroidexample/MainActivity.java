@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextList = (RecyclerView) findViewById(R.id.recycler_view_items);
+        mTextList = findViewById(R.id.recycler_view_items);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mTextList.setLayoutManager(layoutManager);
         mTextList.setHasFixedSize(true);
